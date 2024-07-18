@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="/manifest.json">
+   <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <title>Moonbucks</title>
+</head>
+<body>
+    <header id="top">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+        <img src="./images/header.jpg" alt="Header Image" width="100%" height="auto">
+    </header>
+
+
+    <main>
+        <section id="home">
+            <h1>Welcome to Moonbucks</h1>
+            <p>Discover our range of coffee, tea, hot chocolate, and smoothies.</p>
+        </section>
+        <section id="menu">
+            <h2>Menu</h2>
+            <div id="menu-items">
+                <!-- Menu items will be dynamically added here -->
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <h3>Our Shops</h3>
+            <ul>
+                <li>Stoke City Shop</li>
+                <li>Henley Shop</li>
+                <li>Fenton Shop</li>
+                <li>New Castle Shop</li>
+                <li>Leek Road Shop</li>
+            </ul>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d153594.0584577367!2d-2.324550899624558!3d53.02203182878838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a11520fae440d%3A0xf1cdcd2f02caee04!2sStoke-on-Trent!5e0!3m2!1sen!2suk!4v1715522551660!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <!--
+        <section id="">
+            <h2>Map</h2>
+            <div id="myMap"></div>
+        </section> 
+        -->
+    </main>
+
+    <script src="app.js" defer></script>
+</body>
+
+
+<footer id="footer">
+    <h2><a href="#top" class="btt">Back to top</a></h2>
+    <img src="./images/icon-512x512.webp" alt="Moonbucks" id="footeri" width="200px" height="200px">
+    <br><br>
+    <div class="footerr">
+        <div class="footerleft">
+            <h2>Information</h2>
+            <p>Address:14/3,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Golden Banks Drive,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Stoke-on-Trent ST6 1VB.</p>
+            <p>Open hours: Monday to Saturday - 9am to 5pm</p> 
+        </div>
+        <div class="footerright">
+            <h2>Contact Us:</h2>
+            <p>Mail us:moombucks@example.com</p>
+            <p>Call us:+44-8100500009</p>
+        </div>
+    </div>
+    <div class="social">
+        <a href="#fb"><img src="./images/fb.jpg" alt="Facebook" height="40px" width="40px"></a>
+        <a href="#whatsapp"><img src="./images/wtsp.png" alt="Whatsapp" height="40px" width="40px"></a>
+        <a href="#ig"><img src="./images/ig.png" alt="Instergram" height="40px" width="40px"></a>
+        <a href="#mail"><img src="./images/mail.jpg" alt="Gmail" height="40px" width="40px"></a>
+        <a href="#linkedin"><img src="./images/in.png" alt="LinkedIN" height="40px" width="40px"></a>
+        <a href="#tiktok"><img src="./images/tiktok.png" alt="Tiktok" height="40px" width="40px"></a>
+    </div>
+    <p class="copy">&copy; Copy Right 2024 </p>           
+</footer>
+</html>
+
+
+
+<style>
+    
+:root {
+    --background-light: #f0f0f0; /* Light mode background color */
+    --background-dark: #333; /* Dark mode background color */
+    --text-light: #333; /* Light mode text color */
+    --text-dark: #f0f0f0; /* Dark mode text color */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-light);
+}
+
+header {
+    background-color: var(--background-dark);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-dark); /* Navigation link color */
+}
+
+main {
+    padding: 20px;
+}
+
+
+body.dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+header.dark-mode {
+    background-color: var(--background-light);
+    padding: 10px 0;
+}
+
+
+#menu-items img{
+    width:100%;
+}
+
+iframe{
+    justify-self: center;
+    align-self: center;
+}
+
+
+footer{
+    padding: 100px 0 20px;
+    background: #d8959530;
+    position: relative;
+}
+.btt{
+    margin-left: 46%;
+    color:whitesmoke;
+}
+.footerr{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footerleft,.footerright{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footerright{
+    text-align: right;
+}
+.footerr h2{
+    margin: 10px 0;
+}
+.footerr p{
+    line-height: 35px;
+}
+#footeri{
+    max-width: 300px;
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.social img{
+    border: 1px solid #009688;
+    margin: 40px 5px 0;
+    color: #009688;
+    cursor: pointer;
+    transition: 00.5s;
+}
+.social{
+    text-align: center;
+}
+.social img:hover{
+    background: #009688;
+    color: whitesmoke;
+    transform: translateY(-15px);
+}
+.copy{
+    font-size: 15px;
+    color: #009688;
+    margin-top: 20px;
+    text-align: center;
+}
+@media  screen and (max-width:720px) {
+    .footerleft,.footerright{
+        flex-basis: 100%;
+        font-size: 14px;
+    }
+}
+</style>

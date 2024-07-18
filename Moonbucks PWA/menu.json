@@ -1,0 +1,47 @@
+[
+    {
+        "name": "BOb",
+        "price": "$3.50",
+        "image":"./images/cappuccino.webp"
+    },
+    {
+        "name": "Latte",
+        "price": "$3.50",
+        "image":"./images/latte.webp"
+    },
+    {
+        "name": "Blakc Coffee",
+        "price": "$3.00",
+        "image":"./images/blackcoffee.webp"
+    },
+    {
+        "name": "Black Tea",
+        "price": "$2.50",
+        "image":"./images/blacktea.webp"
+    },
+    {
+        "name": "Iced Tea",
+        "price": "$3.50",
+        "image":"./images/icedtea.webp"
+    },
+    {
+        "name": "Flavoured Tea",
+        "price": "$3.50",
+        "image":"./images/flavouredtea.webp"
+    },
+    {
+        "name": "Hot Chocolate",
+        "price": "$4.00",
+        "image":"./images/hotchocolate.webp"
+    },
+    {
+        "name": "White hot Chocolate",
+        "price": "$4.00",
+        "image":"./images/whitechocolate.webp"
+    },
+    {
+        "name": "Our Range Of Smoothies",
+        "price": "$4.50",
+        "image":"./images/smoothies.webp"
+    }
+]

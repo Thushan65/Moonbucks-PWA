@@ -1,0 +1,124 @@
+
+:root {
+    --background-light: #f0f0f0; /* Light mode background color */
+    --background-dark: #333; /* Dark mode background color */
+    --text-light: #333; /* Light mode text color */
+    --text-dark: #f0f0f0; /* Dark mode text color */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-light);
+}
+
+header {
+    background-color: var(--background-dark);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-dark); /* Navigation link color */
+}
+
+main {
+    padding: 20px;
+}
+
+
+body.dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+header.dark-mode {
+    background-color: var(--background-light);
+    padding: 10px 0;
+}
+
+
+#menu-items img{
+    width:100%;
+}
+
+
+footer{
+    padding: 100px 0 20px;
+    background: #d8959530;
+    position: relative;
+}
+.btt{
+    margin-left: 46%;
+    color:whitesmoke;
+}
+.footerr{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footerleft,.footerright{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footerright{
+    text-align: right;
+}
+.footerr h2{
+    margin: 10px 0;
+}
+.footerr p{
+    line-height: 35px;
+}
+#footeri{
+    max-width: 300px;
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.social img{
+    height: 40px;
+    width: 40px;
+    border: 1px solid #009688;
+    margin: 40px 5px 0;
+    color: #009688;
+    cursor: pointer;
+    transition: 00.5s;
+}
+.social{
+    text-align: center;
+}
+.social img:hover{
+    background: #009688;
+    color: whitesmoke;
+    transform: translateY(-15px);
+}
+.copy{
+    font-size: 15px;
+    color: #009688;
+    margin-top: 20px;
+    text-align: center;
+}
+@media  screen and (max-width:720px) {
+    .footerleft,.footerright{
+        flex-basis: 100%;
+        font-size: 14px;
+    }
+}
